@@ -1,0 +1,183 @@
+# Carlos_Para_Presidente
+Partido de Accion CEZ
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Carlos Leobardo para Presidente Escolar</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Carlos Leobardo para Presidente Escolar</h1>
+        <img src=https://images.unsplash.com/photo-1555848962-6e79363ec58f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1733&q=80 "" alt="Carlos Leobardo">
+    </header>
+    <main>
+        <h2>¿Quién es Carlos Leobardo?</h2>
+        <p>Carlos Leobardo es un apasionado defensor de la educación y un candidato a presidente escolar con una visión sólida para mejorar la experiencia educativa en nuestra escuela. Con una amplia experiencia en liderazgo estudiantil y un compromiso inquebrantable con la comunidad escolar, Carlos está listo para liderar y hacer que nuestras ideas se conviertan en realidad.</p>
+        <h2>Plataforma de Campaña</h2>
+        <p>Carlos Leobardo se compromete a:</p>
+        <ul>
+            <li>Mejorar la comunicación entre estudiantes, profesores y administración.</li>
+            <li>Fomentar la participación estudiantil en actividades extracurriculares.</li>
+            <li>Promover un ambiente escolar inclusivo y diverso.</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2023 Carlos Leobardo para Presidente Escolar</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Carlos Leobardo para Presidente Escolar</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Carlos Leobardo para Presidente Escolar</h1>
+        
+    <main>
+        <h2>¿Quién es Carlos Leobardo?</h2>
+        <!-- Contenido sobre Carlos Leobardo -->
+    </main>
+    
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>Si tienes preguntas o comentarios, no dudes en contactarnos. Completa el siguiente formulario y te responderemos a la brevedad.</p>
+        
+        <form action="procesar_comentario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" required></textarea>
+            
+            <button type="submit">Enviar Comentario</button>
+        </form>
+    </section>
+</body>
+</html>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nombre = $_POST["nombre"];
+    $correo = $_POST["correo"];
+    $comentario = $_POST["comentario"];
+
+    // Configura los datos de Gmail
+    $to = "
+    Yaeljmedina10@gmail.com";  // Reemplaza con tu dirección de Gmail
+    $subject = "Nuevo comentario de $nombre";
+    $message = "Nombre: $nombre\nCorreo: $correo\nComentario:\n$comentario";
+    $headers = "From: $correo";
+
+    // Envía el correo electrónico
+    mail($to, $subject, $message, $headers);
+
+    // Redirige de vuelta a la página de contacto
+    header("Location: index.html");
+}
+?>
+<!-- ... (código HTML previo) ... -->
+
+<section id="representantes">
+    <h2>A sus representantes</h2>
+    <p>Carlos Leobardo agradece el apoyo de los siguientes representantes:</p>
+    <ul>
+        <li>Yael</li>
+        <li>Keren</li>
+        <li>Jaqui</li>
+        <li>Erika</li>
+        <li>Romina</li>
+        <li>Maria</li>
+        <li>Eduardo</li>
+        <li>Wender</li>
+        <li>Allisson</li>
+    </ul>
+</section>
+
+<!-- ... (código HTML posterior) ... -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Carlos Leobardo para Presidente Escolar</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Carlos Leobardo para Presidente Escolar</h1>
+       
+    </header>
+    <main>
+        <section id="propuestas">
+            <h2>Propuestas de Carlos Leobardo</h2>
+            <ul>
+                <li>Mejorar la comunicación entre estudiantes, profesores y administración.</li>
+                <li>Fomentar la participación estudiantil en actividades extracurriculares.</li>
+                <li>Promover un ambiente escolar inclusivo y diverso.</li>
+            </ul>
+        </section>
+        
+    </main>
+    
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Carlos Leobardo para Presidente Escolar</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Carlos Leobardo para Presidente Escolar</h1>
+          
+        </header>
+        <main>
+            <section id="propuestas">
+                <h2>Propuestas de Carlos Leobardo</h2>
+                <ul>
+                    <li>Mejorar la comunicación entre estudiantes, profesores y administración.</li>
+                    <li>Fomentar la participación estudiantil en actividades extracurriculares.</li>
+                    <li>Promover un ambiente escolar inclusivo y diverso.</li>
+                    <li>Organizar eventos culturales y deportivos para promover la unión entre los estudiantes.</li>
+                    <li>Establecer un programa de tutoría entre estudiantes para apoyar el aprendizaje.</li>
+                    <li>Implementar un sistema de reciclaje en la escuela para fomentar la sostenibilidad.</li>
+                    <li>Crear un consejo estudiantil para dar voz a las preocupaciones de los estudiantes.</li>
+                    <li>Mejorar la infraestructura y equipamiento de la escuela.</li>
+                    <li>Promover la participación en proyectos sociales y de voluntariado.</li>
+                    <li>Fomentar la equidad de género y la diversidad en la escuela.</li>
+                </ul>
+            </section>
+           
+            
+            <img src="https://th.bing.com/th/id/OIP.XbprkR0evhBq_S9JOC6wxwHaHa?pid=ImgDet&rs=1" alt="Carlos Leobardo" id="https://th.bing.com/th/id/OIP.XbprkR0evhBq_S9JOC6wxwHaHa?pid=ImgDet&rs=1">
+            </section>
+        </main>
+        <section id="representantes">
+            <h2>A sus representantes</h2>
+            <p>Carlos Leobardo agradece el apoyo de los siguientes representantes:</p>
+            <ul>
+                <li>Yael</li>
+                <li>Keren</li>
+                <li>Jaqui</li>
+                <li>Erika</li>
+                <li>Romina</li>
+                <li>Maria</li>
+                <li>Eduardo</li>
+                <li>Wender</li>
+                <li>Allisson</li>
+            </ul>
+        </section>
+        <footer>
+            <p>&copy; 2023 Carlos Leobardo para Presidente Escolar</p>
+        </footer>
+        <script src="juego.js"></script>
+    </body>
+    </html>
+    
